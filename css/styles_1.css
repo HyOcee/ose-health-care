@@ -16,11 +16,11 @@ header button {
 }
 
 header.home {
-    height: 100vh;
+    height: 100vmin;
 }
 
 header.contact {
-    height: 70vh;
+    height: 70min;
     background-image: url(../images/contact-bg.svg);
     background-size: cover;
 }
@@ -437,6 +437,14 @@ footer img,  .app-store img, .tick-icon {
 @media only screen and (max-width: 850px) {
     header {
         padding: 5%;
+    }
+
+    header.home {
+        height: 100vh;
+    }
+    
+    header.contact {
+        height: 70vh;
     }
 
     header h1 {font-size: 26px;}
