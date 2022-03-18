@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo-icon.svg">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="../css/styles_0.css">
+    <link rel="stylesheet" href="../css/styles_2.css">
+</head>
+<body>
+    <aside class="lt-bl-bg wh">
+        <div class="nav-top">
+            <a href="../index.html" class="nav-top">
+                <img src="../images/logo-icon.svg" alt="">
+                <div>Health Lite</div>
+            </a>
+        </div>
+
+        <nav>
+            <a href="dashboard.html">
+                <img src="../images/dashboard-icon.svg" alt="">
+                <div>Dashboard</div>
+            </a>
+
+            <a href="">
+                <img src="../images/waiting-room.svg" alt="">
+                <div>Waiting Room</div>
+            </a>
+
+            <a href="" class="active">
+                <img src="../images/schedule.svg" alt="">
+                <div>Schedule</div>
+            </a>
+
+            <a href="">
+                <img src="../images/patients.svg" alt="">
+                <div>My Patients</div>
+            </a>
+
+            <a href="">
+                <img src="../images/notes.svg" alt="">
+                <div>Notes</div>
+            </a>
+
+            <a href="">
+                <img src="../images/chats.svg" alt="">
+                <div>Chats</div>
+            </a>
+        </nav>
+
+        <nav>
+            <a href="" class="nav-btm1">
+                <img src="../images/my-profile.svg" alt="">
+                <div>My Profile</div>
+            </a>
+
+            <a href="" class="nav-btm2">
+                <img src="../images/settings.svg" alt="">
+                <div>Settings</div>
+            </a>
+        </nav>
+    </aside>
+    <main class="gr-bg">
+        <div class="main-nav wh-bg">
+            <div class="notification">
+                <img src="../images/notification-bell.svg" alt="">
+                <div>2</div>
+            </div>
+            <div><img src="../images/notification-lady.svg" alt=""></div>
+        </div>
+
+        <section class="gr-bg schedule-top">
+            <div class="pd-7 lt-bl-bg rel br-8 wh">
+                <h1 class="m-btm-1">Your Schedule</h1>
+    
+                <p class="m-btm-1 dashboard-p" id="schedule_p">All client consultations are available here. You can initiate consultations for each client's procedure</p>
+    
+                <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye" aria-hidden="true"></i> &nbsp; Add New Schedule</button>
+                
+                <img class="dashboard-cartoon" src="../images/schedule-cartoon.svg" alt="">
+            </div>
+        </section>
+
+        <section class="gr-bg schedule-main">
+            <div class="main-small">
+                <div class="next-patients br-8 wh-bg m-btm-2">
+                    <img class="large-img" src="../images/calendar.svg" alt="">
+                </div>
+
+                <!-- patients by gender -->
+                <div class="next-patients br-8 wh-bg m-btm-2">
+                    <img class="large-img" src="../images/gender-pie-chart.svg" alt="">
+                </div>
+
+                <!-- activities -->
+                <div class="next-patients br-8 wh-bg m-btm-2">
+                    <div class="f-container activities-header">
+                        <div class="f-18 bd-7 b-btm f-14-sm">Activities</div>
+                        <div><img src="../images/activities-icon.svg" alt=""></div>
+                    </div>
+
+                    <div id="activities" class="pd-3">
+                        <div>
+                            <img src="../images/scheduled-appointments-icon.svg" alt="">
+                            <p>You have scheduled <span class="scheduled-appointments">0</span> appointments for 24th Feb, 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-large">
+                
+                <!-- next patients -->
+                <div id="appointments" class="next-patients br-8 wh-bg m-btm-2">
+                    <div class="f-container pd-3">
+                        <div class="f-18 bd-7 b-btm f-14-sm">Thursday - 18th February, 2021</div>
+                        <div class="f-14-sm"><span class="gr">Show by</span> <spav class="lt-bl">Day</spav> &nbsp;<i class="lt-bl fa fa-angle-down" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/aedd297eaa.js" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

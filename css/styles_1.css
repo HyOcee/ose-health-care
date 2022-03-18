@@ -9,6 +9,8 @@ header {
     min-height: 500px;
 }
 
+header h1 {font-size: 48px;}
+
 header button {
     padding: 16px 24px;
 }
@@ -19,6 +21,8 @@ header.home {
 
 header.contact {
     height: 70vh;
+    background-image: url(../images/contact-bg.svg);
+    background-size: cover;
 }
 
 nav {
@@ -39,7 +43,7 @@ nav ul li {
     list-style: none;
 }
 
-#show-button {display: none;}
+#show-button, #hide-button {display: none;}
 
 nav ul li a {
     text-decoration: none;
@@ -55,6 +59,14 @@ nav ul li a {
     width: 35%;
     top: 60%;
     transform: translateY(-50%);
+    z-index: 3;
+}
+
+.header_img {
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    height: 80%;
 }
 
 .home-text .m-btm {
@@ -93,6 +105,10 @@ section .m-btm {
     margin-bottom: 20px;
 }
 
+section .m-top {
+    margin-top: 12% !important;
+}
+
 section.home h2 {
     font-size: 42px;
 }
@@ -112,6 +128,16 @@ section.home > button {
     text-align: center;
     position: relative;
     transition: 0.5s;
+}
+
+.dot-bar {
+    display: block;
+    margin: -35px auto 90px;
+}
+
+.title-tag {
+    display: block;
+    margin: 10px auto 30px;
 }
 
 .services-cards > div:hover {
@@ -169,7 +195,6 @@ section.home > button {
 
 .pd--1:hover {
     transform: translateY(-3%);
-    transform: translate(3%,-3%);
 }
 
 .m-btm-3 {
@@ -213,11 +238,22 @@ section.home > button {
 .section-end {
     border-radius: 8px;
     padding: 7%;
+    position: relative;
+    margin-top: 15% !important;
 }
 
-.section-end h2 {
+.section-end > div {
     width: 40%;
-    /* min-width: 250px; */
+    min-width: 200px;
+    position: relative;
+    z-index: 3;
+}
+
+.section-end img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 120%;
 }
 
 /* contact page */
@@ -311,6 +347,14 @@ footer .m-btm {
 
 .footer-t .md {width: 15%;}
 
+.footer-t .md > div:not(:first-child) {
+    cursor: pointer;
+}
+
+.footer-t .md > div:not(:first-child):hover {
+    color: rgba(64, 163, 248, 1);
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -337,6 +381,7 @@ form {
 
 footer img,  .app-store img, .tick-icon {
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .contact-container {
@@ -346,6 +391,15 @@ footer img,  .app-store img, .tick-icon {
 
 .d-flex {
     display: none;
+}
+
+.map iframe{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 1320px) {
+    header h1 {font-size: 30px;}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -358,7 +412,7 @@ footer img,  .app-store img, .tick-icon {
     }
 
     section.home h2 {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .contact-text h1 {
@@ -385,27 +439,51 @@ footer img,  .app-store img, .tick-icon {
         padding: 5%;
     }
 
+    header h1 {font-size: 26px;}
+
     nav ul {
         display: block;
         padding: 5% 0;
-        width: fit-content;
+        width: 130px;
         min-width: unset;
         position: fixed;
         z-index: 5;
         top: 0;
         right: 0;
-        height: 100vh;
-        min-height: 350px;
+        min-height: 400px;
         transform: translateX(100%);
         transition: 0.5s;
         background-color: rgba(255, 255, 255, 0.88)
     }
 
-    #show-button {display: block;}
+    #full-height {height: 100vh;}
+
+    .bl-bg-im::after {
+        background-color: rgb(91, 172, 243) !important;
+    }
+
+    nav ul::after {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.88);
+        opacity: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+
+    #show-button, #hide-button {display: block; font-size: 20px !important;}
 
     nav ul li {
         padding: 10px;
         margin: 1% 0;
+    }
+
+    nav ul li:first-child {
+        padding: 0 10px;
+        margin: 0;
     }
 
     nav a {
@@ -421,15 +499,23 @@ footer img,  .app-store img, .tick-icon {
     }
     
     header {
-        min-height: unset;
+        min-height: 400px;
         max-height: 500px;
     } 
 
     .home-text {
         width: 80%;
         max-width: 400px;
-        top: 50%;
     }
+
+    .header_img {
+        opacity: 0.3;
+        right: 0;
+    }
+
+    /* section.home h2 {
+        font-size: 24px;
+    } */
 
     input, button {
         padding: 12px;
@@ -439,6 +525,8 @@ footer img,  .app-store img, .tick-icon {
     .stay-right {
         width: 80%;
     }
+
+    .dot-bar, .title-tag {display: none;}
 
     .bg-amanda, .bg-alissa, .bg-anthony, .bg-khalid {
         height: 210px;
@@ -450,7 +538,11 @@ footer img,  .app-store img, .tick-icon {
     } 
     
     .contact-text h1 {
-        font-size: 36px;
+        font-size: 30px;
+    }
+
+    .app-store img {
+        width: 80px;
     }
 
     .footer-t {
@@ -470,6 +562,12 @@ footer img,  .app-store img, .tick-icon {
         width: 100%;
     }
 
+    .footer-t .md > div:not(:first-child) {
+        width: fit-content;
+        display: inline-block;
+        margin: 0 20px 10px;
+    }
+
     .footer-t .lg-1 {
         flex: unset;
     }
@@ -477,10 +575,6 @@ footer img,  .app-store img, .tick-icon {
     .lg-2 form {
         max-width: 400px;
         margin: auto;
-    }
-
-    .footer-t .md {
-        max-width: 300px;
     }
 
     .footer-b {
@@ -496,12 +590,41 @@ footer img,  .app-store img, .tick-icon {
     }
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 650px){
+    .footer-t .md > div:not(:first-child) {
+        margin: 0 10px 10px;
+    }
+
+    .col-2-3s {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .contact-text h1 {
+        font-size: 24px;
+    }
+
+    section.home h2, .card-title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    body {
+        min-width: 280px;
+    }
+
     .d-flex {
         display: none;
+    }
+
+    button {
+        padding: 8px !important;
     }
 
     .footer-b-child {
         display: none;
     }
+
+    header h1, .contact-text h1 {font-size: 20px;}
 }

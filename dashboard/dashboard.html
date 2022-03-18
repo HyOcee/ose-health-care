@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo-icon.svg">
     <link rel="stylesheet" href="../css/styles_0.css">
     <link rel="stylesheet" href="../css/styles_2.css">
 </head>
@@ -28,7 +29,7 @@
                 <div>Waiting Room</div>
             </a>
 
-            <a href="">
+            <a href="schedule.html">
                 <img src="../images/schedule.svg" alt="">
                 <div>Schedule</div>
             </a>
@@ -77,61 +78,61 @@
 
                     <p class="m-btm-1 dashboard-p">You have <span class="scheduled-appointments">0</span> new appointments and there are currently <span class="waiting-room">0</span> patients in the waiting room. Have a nice day at work!</p>
 
-                    <button class="wh lt-bl-bg-2">View your appointments</button>
-                    <button class="wh lt-bl-bg-2">Go to waiting room</button>
+                    <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye" aria-hidden="true"></i> &nbsp; View your appointments</button>
+                    <button class="wh lt-bl-bg-2">Go to waiting room &nbsp;<i class="wh fa fa-arrow-right" aria-hidden="true"></i></button>
 
                     <img class="dashboard-cartoon" src="../images/dashboard-cartoon.svg" alt="">
                 </div>
 
                 <div class="container m-btm-2">
-                    <div class="col-3 pd-3 wh-bg br-8">
+                    <div class="col-3 pd-3s wh-bg br-8">
                         <div class="f-container m-btm-1">
-                            <div>
+                            <div class="max-width-img">
                                 <img src="../images/total-patients.svg" alt="">
                             </div>
-                            <div class="sm-bold-text">All time</div>
+                            <div class="sm-bold-text">All time &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         </div>
 
                         <div class="d-numbers total-patients">0</div>
                         <div class="gr m-btm-2">Total Patients</div>
 
-                        <div class="card-sm-text">5% less than last month</div>
+                        <div class="card-sm-text"><i class="red-sh fa fa-arrow-down" aria-hidden="true"></i> &nbsp; 5% less than last month</div>
                     </div>
 
-                    <div class="col-3 pd-3 wh-bg br-8">
+                    <div class="col-3 pd-3s wh-bg br-8">
                         <div class="f-container m-btm-1">
-                            <div>
+                            <div class="max-width-img">
                                 <img src="../images/appointments.svg" alt="">
                             </div>
-                            <div class="sm-bold-text">Today</div>
+                            <div class="sm-bold-text">Today &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         </div>
 
                         <div class="d-numbers scheduled-appointments">0</div>
                         <div class="gr m-btm-2">Appointments</div>
 
-                        <div class="card-sm-text">15% more than yesterday</div>
+                        <div class="card-sm-text"><i class=" green fa fa-arrow-up" aria-hidden="true"></i> &nbsp; 15% more than yesterday</div>
                     </div>
 
-                    <div class="col-3 pd-3 wh-bg br-8">
+                    <div class="col-3 pd-3s wh-bg br-8">
                         <div class="f-container m-btm-1">
-                            <div>
+                            <div class="max-width-img">
                                 <img src="../images/waitin-room-2.svg" alt="">
                             </div>
-                            <div class="sm-bold-text">Today</div>
+                            <div class="sm-bold-text">Today &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         </div>
 
                         <div class="d-numbers waiting-room">0</div>
                         <div class="gr m-btm-2">Waiting Room</div>
 
-                        <div class="card-sm-text">35% less than yesterday</div>
+                        <div class="card-sm-text"><i class=" green fa fa-arrow-up" aria-hidden="true"></i> &nbsp; 35% less than yesterday</div>
                     </div>
                 </div>
 
                 <!-- next patients -->
                 <div id="appointments" class="next-patients br-8 wh-bg m-btm-2">
                     <div class="f-container pd-3">
-                        <div class="f-18 bd-7 b-btm">Your next patients</div>
-                        <div class="lt-bl">View All</div>
+                        <div class="f-18 f-14-sm bd-7 b-btm">Your next patients</div>
+                        <div class="lt-bl f-14-sm">View All &nbsp; <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                     </div>
                 </div>
 
@@ -154,15 +155,23 @@
 
                 <!-- activities -->
                 <div class="next-patients br-8 wh-bg m-btm-2">
-                    <div class="f-container pd-3">
-                        <div class="f-18 bd-7 b-btm">Activities</div>
-                        <div>This <span class="lt-bl"> month</span></div>
+                    <div class="f-container activities-header">
+                        <div class="f-18 f-14-sm bd-7 b-btm">Activities</div>
+                        <div><img src="../images/activities-icon.svg" alt=""></div>
+                    </div>
+
+                    <div id="activities" class="pd-3">
+                        <div>
+                            <img src="../images/scheduled-appointments-icon.svg" alt="">
+                            <p>You have scheduled <span class="scheduled-appointments">0</span> appointments for 24th Feb, 2020</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="https://kit.fontawesome.com/aedd297eaa.js" crossorigin="anonymous"></script>
 <script src="../js/script.js"></script>
 </body>
 </html>
