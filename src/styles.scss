@@ -185,6 +185,8 @@ hr {
     transform: scale(1.2);
 }
 
+.md-show {display: none;}
+
 @media only screen and (max-width: 1024px) {
     .col-2-3 {
         width: 46%;
@@ -258,9 +260,11 @@ hr {
 }
 
 @media only screen and (max-width: 650px) {
-    * {
+    *:not(.md-show *) {
         font-size: 14px;
     }
+
+    .md-show {font-size: 30px;}
 
     #show-button, #hide-button {display: block; font-size: 20px !important;}
 
