@@ -1,0 +1,6 @@
+<div *ngFor="let appointment of activities?.activities" id="activities" class="pd-3">
+    <div>
+        <img src="{{appointment?.type === 'report'? 'assets/images/report-img.svg': appointment?.type === 'interview'? 'assets/images/interview-icon.svg': ''}}" alt="">
+        <p>{{appointment?.title}}</p>
+    </div>
+</div>

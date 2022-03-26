@@ -1,0 +1,14 @@
+<div *ngFor="let appointment of patients?.appointments">
+    <div class="appointment-details">
+        <div class="time">{{ appointment.createdAt | date:'shortTime' }}</div>
+        <div class="appointment-name-img gr-bg br-8">
+            <div class="image">
+                <img src="assets/images/patient-appointment.svg" alt="">
+            </div>
+            <div class="name">{{appointment?.name}}</div>
+            <div>
+                <img src="assets/images/three-dots.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

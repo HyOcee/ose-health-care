@@ -1,0 +1,638 @@
+.logo {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+header {
+    padding: 2% 7.5%;
+    position: relative;
+    min-height: 500px;
+}
+
+header h1 {font-size: 48px;}
+
+header button {
+    padding: 16px 24px;
+}
+
+header.home {
+    height: 100vmin;
+}
+
+header.contact {
+    height: 70min;
+    background-image: url(../images/contact-bg.svg);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    min-width: 400px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+#show-button, #hide-button {display: none;}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-nav ul li a:hover {
+    color: rgba(64, 163, 248, 1);
+}
+
+.home-text {
+    position: absolute;
+    width: 35%;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.header_img {
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    height: 80%;
+}
+
+.home-text .m-btm {
+    margin-bottom: 22px;
+}
+
+.container-g, .container-g-2 {
+    position: relative;
+    display: flex;
+}
+
+.container-g {justify-content: flex-end;}
+
+.static-image-left {
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+}
+
+.stay-right {
+    width: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+section.home {
+    padding: 5% 7.5%;
+    background-image: linear-gradient(to bottom right,rgb(230, 242, 252),rgb(230, 245, 253),#fff,rgba(229, 243, 250, 0.65), rgb(217, 233, 245));
+}
+
+section.home > div {
+    margin: 7% 0;
+}
+
+section .m-btm {
+    margin-bottom: 20px;
+}
+
+section .m-top {
+    margin-top: 12% !important;
+}
+
+section.home h2 {
+    font-size: 42px;
+}
+
+section.home > h2, section.home > p {
+    text-align: center;
+}
+
+section.home > button {
+    display: block;
+    margin: auto;
+}
+
+.services-cards > div {
+    padding: 5%;
+    padding-bottom: 25px;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.dot-bar {
+    display: block;
+    margin: -35px auto 90px;
+}
+
+.title-tag {
+    display: block;
+    margin: 10px auto 30px;
+}
+
+.services-cards > div:hover {
+    background-color: white;
+}
+
+.services-cards > div:hover::after {
+    content: " ";
+    width: 100%;
+    display: block;
+    height: 16px;
+    background-color: rgba(64, 163, 248, 1);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: cardBottom 0.5s;
+}
+
+@keyframes cardBottom {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+.services-cards > div img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 80px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.services-cards > div p {
+    margin-top: 30px;
+}
+
+.client-cards > div {
+    border-radius: 8px;
+    background-color: white;
+    position: relative; 
+}
+
+.client-cards .client-img {
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+/* meet the doctors */
+.pd--1 {
+    padding: 0.5% 0.5% 2%;
+    transition: 0.5s;
+}
+
+.pd--1:hover {
+    transform: translateY(-3%);
+}
+
+.m-btm-3 {
+    margin-bottom: 10px;
+}
+
+.bg-amanda, .bg-alissa, .bg-anthony, .bg-khalid {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
+
+.bg-amanda {
+    background-image: url(../images/dr-amanda.svg);
+}
+
+.bg-alissa {
+    background-image: url(../images/dr-alissa.svg);
+}
+
+.bg-anthony {
+    background-image: url(../images/dr-anthony.svg);
+}
+
+.bg-khalid {
+    background-image: url(../images/dj-khalid.svg);
+}
+
+.blue-circle {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    transform: translateY(-30%);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.section-end {
+    border-radius: 8px;
+    padding: 7%;
+    position: relative;
+    margin-top: 15% !important;
+}
+
+.section-end > div {
+    width: 40%;
+    min-width: 200px;
+    position: relative;
+    z-index: 3;
+}
+
+.section-end img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 120%;
+}
+
+/* contact page */
+
+.contact-text {
+    text-align: center;
+    width: 30%;
+} 
+
+.contact-text h1 {
+    font-size: 63px;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    margin-bottom: 20px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.contact-details-head {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 5% 10%;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details .icon {
+    margin-right: 20px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    padding: 18px;
+}
+
+.ft-btn {
+    width: fit-content;
+}
+
+button:focus, button:hover {
+    outline: 2px solid rgb(213, 237, 243);
+}
+
+input, textarea {
+    padding: 20px;
+    border-radius: 5px;
+    border: rgba(225, 226, 228, 1) 1px solid;
+}
+
+input:not(:last-child), textarea:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+input:focus, textarea:focus {
+    outline: rgba(64, 163, 248, 1) 1px solid;
+}
+
+footer {
+    padding: 0 7.5%;
+    font-size: 14px;
+}
+
+footer .m-btm {
+    margin-bottom: 16px;
+}
+
+.footer-t {
+    padding: 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-t .lg-1 {flex: 1;}
+
+.footer-t .lg-2 {width: 30%;}
+
+.footer-t .md {width: 15%;}
+
+.footer-t .md > div:not(:first-child) {
+    cursor: pointer;
+}
+
+.footer-t .md > div:not(:first-child):hover {
+    color: rgba(64, 163, 248, 1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-b {
+    border-top: 1px solid rgba(117, 117, 117, 0.46);
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-b-child {
+    width: 25%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-titles {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer img,  .app-store img, .tick-icon {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: none;
+}
+
+.map iframe{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 1320px) {
+    header h1 {font-size: 30px;}
+}
+
+@media only screen and (max-width: 1024px) {
+    header button {
+        padding: 16px 18px;
+    }
+
+    input, button {
+        padding: 16px;
+    }
+
+    section.home h2 {
+        font-size: 25px;
+    }
+
+    .contact-text h1 {
+        font-size: 42px;
+    }
+
+    .contact-details > *{
+        margin-bottom: 16px;
+    }
+
+    .contact-details-head {
+        font-size: 20px;
+        padding: 3% 10%;
+    }
+
+    .stay-right {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    header {
+        padding: 5%;
+    }
+
+    header.home {
+        height: 100vh;
+    }
+    
+    header.contact {
+        height: 70vh;
+    }
+
+    header h1 {font-size: 26px;}
+
+    nav ul {
+        display: block;
+        padding: 5% 0;
+        width: 130px;
+        min-width: unset;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        min-height: 400px;
+        transform: translateX(100%);
+        transition: 0.5s;
+        background-color: rgba(255, 255, 255, 0.88)
+    }
+
+    #full-height {height: 100vh;}
+
+    .bl-bg-im::after {
+        background-color: rgb(91, 172, 243) !important;
+    }
+
+    nav ul::after {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.88);
+        opacity: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+
+    #show-button, #hide-button {display: block; font-size: 20px !important;}
+
+    nav ul li {
+        padding: 10px;
+        margin: 1% 0;
+    }
+
+    nav ul li:first-child {
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav ul button.lt-bl-bg, 
+    nav ul button.wh-bg {
+        padding: 10px;
+        background-color: inherit;
+        color: inherit;
+    }
+    
+    header {
+        min-height: 400px;
+        max-height: 500px;
+    } 
+
+    .home-text {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .header_img {
+        opacity: 0.3;
+        right: 0;
+    }
+
+    /* section.home h2 {
+        font-size: 24px;
+    } */
+
+    input, button {
+        padding: 12px;
+    }
+    .logo {font-size: 24px;}
+
+    .stay-right {
+        width: 80%;
+    }
+
+    .dot-bar, .title-tag {display: none;}
+
+    .bg-amanda, .bg-alissa, .bg-anthony, .bg-khalid {
+        height: 210px;
+    }
+
+    .contact-text {
+        width: 50%;
+        min-width: 180px;
+    } 
+    
+    .contact-text h1 {
+        font-size: 30px;
+    }
+
+    .app-store img {
+        width: 80px;
+    }
+
+    .footer-t {
+        justify-content: space-around;
+        text-align: center !important;
+    }
+
+    .d-none {display: none;}
+
+    .d-flex {
+        display: flex;
+        margin: 10px auto 20px;
+        width: fit-content;
+    }
+
+    .footer-t .md, .footer-t .lg-2, .footer-t .lg-1 {
+        width: 100%;
+    }
+
+    .footer-t .md > div:not(:first-child) {
+        width: fit-content;
+        display: inline-block;
+        margin: 0 20px 10px;
+    }
+
+    .footer-t .lg-1 {
+        flex: unset;
+    }
+
+    .lg-2 form {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .footer-b {
+        display: block;
+    }
+
+    .footer-b > div:first-child {
+        width: fit-content;
+    }
+
+    .footer-b > div {
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .footer-t .md > div:not(:first-child) {
+        margin: 0 10px 10px;
+    }
+
+    .col-2-3s {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .contact-text h1 {
+        font-size: 24px;
+    }
+
+    section.home h2, .card-title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    body {
+        min-width: 280px;
+    }
+
+    .d-flex {
+        display: none;
+    }
+
+    button {
+        padding: 8px !important;
+    }
+
+    .footer-b-child {
+        display: none;
+    }
+
+    header h1, .contact-text h1 {font-size: 20px;}
+}

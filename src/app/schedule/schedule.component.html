@@ -1,0 +1,109 @@
+<aside class="lt-bl-bg wh">
+    <div class="nav-top">
+        <a href="/" class="nav-top">
+            <img src="assets/images/logo-icon.svg" alt="">
+            <div>Health Lite</div>
+        </a>
+    </div>
+
+    <nav>
+        <a href="/dashboard">
+            <img src="assets/images/dashboard-icon.svg" alt="">
+            <div>Dashboard</div>
+        </a>
+
+        <a href="">
+            <img src="assets/images/waiting-room.svg" alt="">
+            <div>Waiting Room</div>
+        </a>
+
+        <a href="" class="active">
+            <img src="assets/images/schedule.svg" alt="">
+            <div>Schedule</div>
+        </a>
+
+        <a href="">
+            <img src="assets/images/patients.svg" alt="">
+            <div>My Patients</div>
+        </a>
+
+        <a href="">
+            <img src="assets/images/notes.svg" alt="">
+            <div>Notes</div>
+        </a>
+
+        <a href="">
+            <img src="assets/images/chats.svg" alt="">
+            <div>Chats</div>
+        </a>
+    </nav>
+
+    <nav>
+        <a href="" class="nav-btm1">
+            <img src="assets/images/my-profile.svg" alt="">
+            <div>My Profile</div>
+        </a>
+
+        <a href="" class="nav-btm2">
+            <img src="assets/images/settings.svg" alt="">
+            <div>Settings</div>
+        </a>
+    </nav>
+</aside>
+<main class="gr-bg">
+    <div class="main-nav wh-bg">
+        <div class="notification">
+            <img src="assets/images/notification-bell.svg" alt="">
+            <div>2</div>
+        </div>
+        <div><img src="assets/images/notification-lady.svg" alt=""></div>
+    </div>
+
+    <section class="gr-bg schedule-top">
+        <div class="pd-7 lt-bl-bg rel br-8 wh">
+            <h1 class="m-btm-1">Your Schedule</h1>
+
+            <p class="m-btm-1 dashboard-p" id="schedule_p">All client consultations are available here. You can initiate consultations for each client's procedure</p>
+
+            <button class="wh lt-bl-bg-2"><i class="wh fa fa-eye" aria-hidden="true"></i> &nbsp; Add New Schedule</button>
+            
+            <img class="dashboard-cartoon" src="assets/images/schedule-cartoon.svg" alt="">
+        </div>
+    </section>
+
+    <section class="gr-bg schedule-main">
+        <div class="main-small">
+            <div class="next-patients br-8 wh-bg m-btm-2">
+                <img class="large-img" src="assets/images/calendar.svg" alt="">
+            </div>
+
+            <!-- patients by gender -->
+            <div class="next-patients br-8 wh-bg m-btm-2">
+                <img class="large-img" src="assets/images/gender-pie-chart.svg" alt="">
+            </div>
+
+            <!-- activities -->
+            <div class="next-patients br-8 wh-bg m-btm-2">
+                <div class="f-container activities-header">
+                    <div class="f-18 bd-7 b-btm f-14-sm">Activities</div>
+                    <div><img src="assets/images/activities-icon.svg" alt=""></div>
+                </div>
+
+                <app-activities></app-activities>
+            </div>
+        </div>
+
+        <div class="main-large">
+            
+            <!-- next patients -->
+            <div id="appointments" class="next-patients br-8 wh-bg m-btm-2">
+                <div class="f-container pd-3">
+                    <div class="f-18 bd-7 b-btm f-14-sm">Thursday - 18th February, 2021</div>
+                    <div class="f-14-sm"><span class="gr">Show by</span> <span class="lt-bl">Day</span> &nbsp;<i class="lt-bl fa fa-angle-down" aria-hidden="true"></i></div>
+                </div>
+
+                <app-appointments></app-appointments>
+            </div>
+        </div>
+    </section>
+</main>
