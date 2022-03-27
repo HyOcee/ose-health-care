@@ -2,8 +2,8 @@
     <nav>
         <div routerLink="/" class="logo">HEALTCARE .</div>
 
-        <ul class="bl-bg-im">
-            <li id="hide-button"><i class="fa fa-times wh"></i></li>
+        <ul class="bl-bg-im" #navUl>
+            <li id="hide-button" (click)="navHide(navUl)"><i class="fa fa-times wh"></i></li>
             <li><a routerLink="/">Home</a></li>
             <li><a routerLink="/">About</a></li>
             <li><a routerLink="/">Services</a></li>
@@ -11,7 +11,7 @@
             <a routerLink="/dashboard"><button class="wh-bg lt-bl">Get Started</button></a>
         </ul>
 
-        <li id="show-button"><i class="fa fa-bars wh"></i></li>
+        <li id="show-button" (click)="navShow(navUl)"><i class="fa fa-bars wh"></i></li>
     </nav>
 
     <div class="contact-text centered">
@@ -51,7 +51,7 @@
 
     <div class="col-5-5 shdw br-8">
         <form id="contactUs" action="" class="pd-2">
-            <input required autofocus name="name" type="text" class="gr-bg" placeholder="Enter your name*">
+            <input required name="name" type="text" class="gr-bg" placeholder="Enter your name*">
 
             <input name="email" type="email" class="gr-bg" placeholder="Enter your email address*">
 

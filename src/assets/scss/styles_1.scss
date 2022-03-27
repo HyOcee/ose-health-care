@@ -458,11 +458,14 @@ footer img,  .app-store img, .tick-icon {
         z-index: 5;
         top: 0;
         right: 0;
-        min-height: 400px;
         transform: translateX(100%);
-        transition: 0.5s;
+        transition: 0.7s;
         background-color: rgba(255, 255, 255, 0.88)
     }
+
+    .contact nav ul {height: 70vh;}
+
+    .home nav ul {height: 100vh;}
 
     #full-height {height: 100vh;}
 

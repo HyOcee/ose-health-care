@@ -14,7 +14,6 @@ export class ActivitiesComponent implements OnInit {
     this._MyHttpService.getActivities().subscribe(
       (response) => {
         this.activities = response;
-        console.log(this.activities)
       },
       (error) => {console.log(error);})
   }

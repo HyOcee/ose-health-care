@@ -2,8 +2,8 @@
     <nav class="home-nav">
         <div routerLink="/" class="logo lt-bl">HEALTCARE.</div>
 
-        <ul id="full-height">
-            <li id="hide-button"><i class="fa fa-times lt-bl"></i></li>
+        <ul id="full-height" #navUl>
+            <li id="hide-button" (click)="navHide(navUl)"><i class="fa fa-times lt-bl"></i></li>
             <li class="lt-bl"><a routerLink="/">Home</a></li>
             <li><a routerLink="">About</a></li>
             <li><a routerLink="">Services</a></li>
@@ -11,7 +11,7 @@
             <a routerLink="/dashboard"><button class="lt-bl-bg wh">Get Started </button></a>
         </ul>
 
-        <li id="show-button"><i class="fa fa-bars"></i></li>
+        <li id="show-button" (click)="navShow(navUl)"><i class="fa fa-bars"></i></li>
     </nav>
 
     <div class="home-text">
