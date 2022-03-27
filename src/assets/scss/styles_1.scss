@@ -447,6 +447,11 @@ footer img,  .app-store img, .tick-icon {
         height: 70vh;
     }
 
+    header, nav ul {
+        min-height: 400px;
+        max-height: 500px;
+    } 
+
     header h1 {font-size: 26px;}
 
     nav ul {
@@ -465,7 +470,9 @@ footer img,  .app-store img, .tick-icon {
 
     .contact nav ul {height: 70vh;}
 
-    .home nav ul {height: 100vh;}
+    .home nav ul {
+        height: 100vh;
+    }
 
     #full-height {height: 100vh;}
 
@@ -508,11 +515,6 @@ footer img,  .app-store img, .tick-icon {
         background-color: inherit;
         color: inherit;
     }
-    
-    header {
-        min-height: 400px;
-        max-height: 500px;
-    } 
 
     .home-text {
         width: 80%;
